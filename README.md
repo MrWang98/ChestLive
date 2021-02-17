@@ -8,7 +8,7 @@
 
 1、其中model1是用split/train数据进行训练，test进行测试
 
-2、model与1相反
+2、model2与1的训练和测试相反
 
 3、model_2way是用split/train中数据训练的2分类模型
 
