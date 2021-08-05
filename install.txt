@@ -1,0 +1,10 @@
+Collecting keras==2.1.2
+  Using cached Keras-2.1.2-py2.py3-none-any.whl (304 kB)
+Requirement already satisfied: numpy>=1.9.1 in /home/xuemeng/anaconda3/envs/tf/lib/python3.8/site-packages (from keras==2.1.2) (1.19.5)
+Requirement already satisfied: six>=1.9.0 in /home/xuemeng/anaconda3/envs/tf/lib/python3.8/site-packages (from keras==2.1.2) (1.15.0)
+Collecting scipy>=0.14
+  Downloading scipy-1.6.0-cp38-cp38-manylinux1_x86_64.whl (27.2 MB)
+Collecting pyyaml
+  Downloading PyYAML-5.4.1-cp38-cp38-manylinux1_x86_64.whl (662 kB)
+Installing collected packages: scipy, pyyaml, keras
+Successfully installed keras-2.1.2 pyyaml-5.4.1 scipy-1.6.0

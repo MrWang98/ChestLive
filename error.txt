@@ -1,0 +1,71 @@
+2021-04-24 11:06:24.785111: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-04-24 11:06:47.911533: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-04-24 11:06:47.912508: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-04-24 11:06:47.975924: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:73:00.0 name: GeForce RTX 3080 computeCapability: 8.6
+coreClock: 1.71GHz coreCount: 68 deviceMemorySize: 9.78GiB deviceMemoryBandwidth: 707.88GiB/s
+2021-04-24 11:06:47.975969: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-04-24 11:06:47.978444: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-04-24 11:06:47.978505: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-04-24 11:06:47.979271: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-04-24 11:06:47.979493: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-04-24 11:06:47.980794: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-04-24 11:06:47.981345: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-04-24 11:06:47.981472: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-04-24 11:06:47.982721: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-04-24 11:06:47.983035: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-04-24 11:06:47.984737: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-04-24 11:06:47.985489: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:73:00.0 name: GeForce RTX 3080 computeCapability: 8.6
+coreClock: 1.71GHz coreCount: 68 deviceMemorySize: 9.78GiB deviceMemoryBandwidth: 707.88GiB/s
+2021-04-24 11:06:47.985514: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-04-24 11:06:47.985529: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-04-24 11:06:47.985538: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-04-24 11:06:47.985547: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-04-24 11:06:47.985556: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-04-24 11:06:47.985565: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-04-24 11:06:47.985574: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-04-24 11:06:47.985583: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-04-24 11:06:47.986806: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-04-24 11:06:47.986833: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-04-24 11:06:48.510504: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-04-24 11:06:48.510550: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-04-24 11:06:48.510558: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-04-24 11:06:48.512466: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9061 MB memory) -> physical GPU (device: 0, name: GeForce RTX 3080, pci bus id: 0000:73:00.0, compute capability: 8.6)
+2021-04-24 11:06:48.768634: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-04-24 11:06:50.433116: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-04-24 11:06:50.435940: E tensorflow/stream_executor/cuda/cuda_blas.cc:226] failed to create cublas handle: CUBLAS_STATUS_NOT_INITIALIZED
+2021-04-24 11:06:50.436364: W tensorflow/core/framework/op_kernel.cc:1763] OP_REQUIRES failed at conv_ops.cc:1106 : Not found: No algorithm worked!
+/home/xuemeng/Proj/ChestMotion/ReadData.py:9: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  nda = np.array(data).shape[0]
+personlist:['DengYangTao', 'HuangJiaQian', 'LiLinWei', 'BiHongLiang', 'LPY', 'HuHaiYan', 'KuangRuiLin', 'GQY']
+personlist:['XueMeng', 'WuYuan', 'XZQ', 'QinDang', 'OuRunMin', 'ZhuTianLin', 'ZhuXiaoTian']
+开始
+Traceback (most recent call last):
+  File "train.py", line 242, in <module>
+    preds = model(images)
+  File "/home/xuemeng/anaconda3/envs/tf/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer.py", line 1012, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/xuemeng/anaconda3/envs/tf/lib/python3.8/site-packages/tensorflow/python/keras/engine/functional.py", line 424, in call
+    return self._run_internal_graph(
+  File "/home/xuemeng/anaconda3/envs/tf/lib/python3.8/site-packages/tensorflow/python/keras/engine/functional.py", line 560, in _run_internal_graph
+    outputs = node.layer(*args, **kwargs)
+  File "/home/xuemeng/anaconda3/envs/tf/lib/python3.8/site-packages/tensorflow/python/keras/engine/base_layer.py", line 1012, in __call__
+    outputs = call_fn(inputs, *args, **kwargs)
+  File "/home/xuemeng/anaconda3/envs/tf/lib/python3.8/site-packages/tensorflow/python/keras/layers/convolutional.py", line 248, in call
+    outputs = self._convolution_op(inputs, self.kernel)
+  File "/home/xuemeng/anaconda3/envs/tf/lib/python3.8/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "/home/xuemeng/anaconda3/envs/tf/lib/python3.8/site-packages/tensorflow/python/ops/nn_ops.py", line 1013, in convolution_v2
+    return convolution_internal(
+  File "/home/xuemeng/anaconda3/envs/tf/lib/python3.8/site-packages/tensorflow/python/ops/nn_ops.py", line 1143, in convolution_internal
+    return op(
+  File "/home/xuemeng/anaconda3/envs/tf/lib/python3.8/site-packages/tensorflow/python/ops/nn_ops.py", line 2597, in _conv2d_expanded_batch
+    return gen_nn_ops.conv2d(
+  File "/home/xuemeng/anaconda3/envs/tf/lib/python3.8/site-packages/tensorflow/python/ops/gen_nn_ops.py", line 932, in conv2d
+    _ops.raise_from_not_ok_status(e, name)
+  File "/home/xuemeng/anaconda3/envs/tf/lib/python3.8/site-packages/tensorflow/python/framework/ops.py", line 6862, in raise_from_not_ok_status
+    six.raise_from(core._status_to_exception(e.code, message), None)
+  File "<string>", line 3, in raise_from
+tensorflow.python.framework.errors_impl.NotFoundError: No algorithm worked! [Op:Conv2D]

@@ -1,0 +1,718 @@
+2021-05-15 21:48:26.416395: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-05-15 21:48:27.477853: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-05-15 21:48:27.478834: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2021-05-15 21:48:27.509525: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:d5:00.0 name: GeForce RTX 3080 computeCapability: 8.6
+coreClock: 1.71GHz coreCount: 68 deviceMemorySize: 9.77GiB deviceMemoryBandwidth: 707.88GiB/s
+2021-05-15 21:48:27.509578: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-05-15 21:48:27.514236: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-05-15 21:48:27.514309: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-05-15 21:48:27.515706: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-05-15 21:48:27.516024: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-05-15 21:48:27.518054: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-05-15 21:48:27.518904: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-05-15 21:48:27.519032: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-05-15 21:48:27.520307: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-05-15 21:48:27.529985: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-05-15 21:48:27.531529: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-05-15 21:48:27.532240: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:d5:00.0 name: GeForce RTX 3080 computeCapability: 8.6
+coreClock: 1.71GHz coreCount: 68 deviceMemorySize: 9.77GiB deviceMemoryBandwidth: 707.88GiB/s
+2021-05-15 21:48:27.532269: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-05-15 21:48:27.532287: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-05-15 21:48:27.532297: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-05-15 21:48:27.532308: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2021-05-15 21:48:27.532318: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2021-05-15 21:48:27.532328: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusolver.so.10
+2021-05-15 21:48:27.532338: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2021-05-15 21:48:27.532349: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-05-15 21:48:27.533437: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1862] Adding visible gpu devices: 0
+2021-05-15 21:48:27.533470: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2021-05-15 21:48:28.111101: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-15 21:48:28.111160: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2021-05-15 21:48:28.111168: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2021-05-15 21:48:28.112993: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1406] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 7534 MB memory) -> physical GPU (device: 0, name: GeForce RTX 3080, pci bus id: 0000:d5:00.0, compute capability: 8.6)
+2021-05-15 21:48:39.688026: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2021-05-15 21:48:42.050820: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2021-05-15 21:48:42.721668: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2021-05-15 21:48:42.907397: I tensorflow/stream_executor/cuda/cuda_blas.cc:1838] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+2021-05-15 21:48:43.780160: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-05-15 21:48:43.801925: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2400000000 Hz
+personlist:['KuangPeng', 'LengChao', 'XueMeng', 'ChenChangXin', 'GuXiang', 'YangYuanJie', 'OuRunMin']
+KuangPeng
+LengChao
+XueMeng
+ChenChangXin
+GuXiang
+YangYuanJie
+OuRunMin
+personlist:['OuRunMin_65db', 'OuRunMin_50db', 'OuRunMin_55db']
+OuRunMin_65db
+OuRunMin_50db
+OuRunMin_55db
+keys:['GuXiang', 0]
+keys:['GuXiang', 'KuangPeng']
+0
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['LengChao', 0]
+keys:['LengChao', 'KuangPeng']
+1
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['YangYuanJie', 0]
+keys:['YangYuanJie', 'LengChao']
+2
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['ChenChangXin', 0]
+keys:['ChenChangXin', 'KuangPeng']
+3
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['ChenChangXin', 0]
+keys:['ChenChangXin', 'YangYuanJie']
+4
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['ChenChangXin', 0]
+keys:['ChenChangXin', 'XueMeng']
+5
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['GuXiang', 0]
+keys:['GuXiang', 'XueMeng']
+6
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['YangYuanJie', 0]
+keys:['YangYuanJie', 'XueMeng']
+7
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['OuRunMin', 0]
+OuRunMin_65db
+keys:['OuRunMin', 'YangYuanJie']
+8
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['KuangPeng', 0]
+keys:['KuangPeng', 'YangYuanJie']
+9
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[1 0]
+keys:['OuRunMin', 0]
+OuRunMin_65db
+keys:['OuRunMin', 'LengChao']
+10
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['LengChao', 0]
+keys:['LengChao', 'KuangPeng']
+11
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['XueMeng', 0]
+keys:['XueMeng', 'LengChao']
+12
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['YangYuanJie', 0]
+keys:['YangYuanJie', 'KuangPeng']
+13
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['YangYuanJie', 0]
+keys:['YangYuanJie', 'LengChao']
+14
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['GuXiang', 0]
+keys:['GuXiang', 'KuangPeng']
+15
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['OuRunMin', 0]
+OuRunMin_65db
+keys:['OuRunMin', 'XueMeng']
+16
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['YangYuanJie', 0]
+keys:['YangYuanJie', 'KuangPeng']
+17
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['XueMeng', 0]
+keys:['XueMeng', 'GuXiang']
+18
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['LengChao', 0]
+keys:['LengChao', 'YangYuanJie']
+19
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['YangYuanJie', 0]
+keys:['YangYuanJie', 'XueMeng']
+20
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[1 0]
+keys:['ChenChangXin', 0]
+keys:['ChenChangXin', 'XueMeng']
+21
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['KuangPeng', 0]
+keys:['KuangPeng', 'OuRunMin']
+OuRunMin_65db
+22
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[1 0]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['XueMeng', 0]
+keys:['XueMeng', 'GuXiang']
+23
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['LengChao', 0]
+keys:['LengChao', 'GuXiang']
+24
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['GuXiang', 0]
+keys:['GuXiang', 'XueMeng']
+25
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['KuangPeng', 0]
+keys:['KuangPeng', 'ChenChangXin']
+26
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['ChenChangXin', 0]
+keys:['ChenChangXin', 'YangYuanJie']
+27
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['LengChao', 0]
+keys:['LengChao', 'YangYuanJie']
+28
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['OuRunMin', 0]
+OuRunMin_65db
+keys:['OuRunMin', 'YangYuanJie']
+29
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['YangYuanJie', 0]
+keys:['YangYuanJie', 'OuRunMin']
+OuRunMin_65db
+30
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['GuXiang', 0]
+keys:['GuXiang', 'KuangPeng']
+31
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['LengChao', 0]
+keys:['LengChao', 'OuRunMin']
+OuRunMin_65db
+32
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['XueMeng', 0]
+keys:['XueMeng', 'ChenChangXin']
+33
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['ChenChangXin', 0]
+keys:['ChenChangXin', 'XueMeng']
+34
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['GuXiang', 0]
+keys:['GuXiang', 'XueMeng']
+35
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['YangYuanJie', 0]
+keys:['YangYuanJie', 'ChenChangXin']
+36
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['XueMeng', 0]
+keys:['XueMeng', 'YangYuanJie']
+37
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['OuRunMin', 0]
+OuRunMin_65db
+keys:['OuRunMin', 'LengChao']
+38
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['LengChao', 0]
+keys:['LengChao', 'YangYuanJie']
+39
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['GuXiang', 0]
+keys:['GuXiang', 'ChenChangXin']
+40
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['GuXiang', 0]
+keys:['GuXiang', 'OuRunMin']
+OuRunMin_65db
+41
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['OuRunMin', 0]
+OuRunMin_65db
+keys:['OuRunMin', 'ChenChangXin']
+42
+labels:[0. 1.], preds:[1 0]
+labels:[0. 1.], preds:[1 0]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[1 0]
+labels:[0. 1.], preds:[0 1]
+keys:['OuRunMin', 0]
+OuRunMin_65db
+keys:['OuRunMin', 'LengChao']
+43
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['ChenChangXin', 0]
+keys:['ChenChangXin', 'KuangPeng']
+44
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['YangYuanJie', 0]
+keys:['YangYuanJie', 'XueMeng']
+45
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['XueMeng', 0]
+keys:['XueMeng', 'OuRunMin']
+OuRunMin_65db
+46
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['XueMeng', 0]
+keys:['XueMeng', 'YangYuanJie']
+47
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['KuangPeng', 0]
+keys:['KuangPeng', 'LengChao']
+48
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['OuRunMin', 0]
+OuRunMin_65db
+keys:['OuRunMin', 'YangYuanJie']
+49
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['XueMeng', 0]
+keys:['XueMeng', 'YangYuanJie']
+50
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['GuXiang', 0]
+keys:['GuXiang', 'ChenChangXin']
+51
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[1 0]
+labels:[0. 1.], preds:[0 1]
+keys:['KuangPeng', 0]
+keys:['KuangPeng', 'GuXiang']
+52
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['OuRunMin', 0]
+OuRunMin_65db
+keys:['OuRunMin', 'LengChao']
+53
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['OuRunMin', 0]
+OuRunMin_65db
+keys:['OuRunMin', 'XueMeng']
+54
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['ChenChangXin', 0]
+keys:['ChenChangXin', 'YangYuanJie']
+55
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['GuXiang', 0]
+keys:['GuXiang', 'ChenChangXin']
+56
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[1 0]
+keys:['KuangPeng', 0]
+keys:['KuangPeng', 'GuXiang']
+57
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['ChenChangXin', 0]
+keys:['ChenChangXin', 'OuRunMin']
+OuRunMin_65db
+58
+labels:[0. 1.], preds:[1 0]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['GuXiang', 0]
+keys:['GuXiang', 'YangYuanJie']
+59
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['XueMeng', 0]
+keys:['XueMeng', 'KuangPeng']
+60
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['GuXiang', 0]
+keys:['GuXiang', 'ChenChangXin']
+61
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['YangYuanJie', 0]
+keys:['YangYuanJie', 'OuRunMin']
+OuRunMin_65db
+62
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['KuangPeng', 0]
+keys:['KuangPeng', 'XueMeng']
+63
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['ChenChangXin', 0]
+keys:['ChenChangXin', 'OuRunMin']
+OuRunMin_65db
+64
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['GuXiang', 0]
+keys:['GuXiang', 'XueMeng']
+65
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['LengChao', 0]
+keys:['LengChao', 'XueMeng']
+66
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['XueMeng', 0]
+keys:['XueMeng', 'GuXiang']
+67
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['YangYuanJie', 0]
+keys:['YangYuanJie', 'ChenChangXin']
+68
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['KuangPeng', 0]
+keys:['KuangPeng', 'OuRunMin']
+OuRunMin_65db
+69
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['GuXiang', 0]
+keys:['GuXiang', 'ChenChangXin']
+70
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['YangYuanJie', 0]
+keys:['YangYuanJie', 'XueMeng']
+71
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['LengChao', 0]
+keys:['LengChao', 'YangYuanJie']
+72
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['ChenChangXin', 0]
+keys:['ChenChangXin', 'KuangPeng']
+73
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['KuangPeng', 0]
+keys:['KuangPeng', 'YangYuanJie']
+74
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['OuRunMin', 0]
+OuRunMin_65db
+keys:['OuRunMin', 'KuangPeng']
+75
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['ChenChangXin', 0]
+keys:['ChenChangXin', 'GuXiang']
+76
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['LengChao', 0]
+keys:['LengChao', 'GuXiang']
+77
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['XueMeng', 0]
+keys:['XueMeng', 'ChenChangXin']
+78
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['GuXiang', 0]
+keys:['GuXiang', 'YangYuanJie']
+79
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]
+keys:['YangYuanJie', 0]
+keys:['YangYuanJie', 'ChenChangXin']
+80
+labels:[0. 1.], preds:[0 1]
+labels:[0. 1.], preds:[0 1]

@@ -1,0 +1,267 @@
+2021-01-13 18:57:36.890545: I tensorflow/core/platform/cpu_feature_guard.cc:143] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+2021-01-13 18:57:36.917556: I tensorflow/core/platform/profile_utils/cpu_utils.cc:102] CPU Frequency: 2400000000 Hz
+2021-01-13 18:57:36.920788: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x7f39d8000b60 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-01-13 18:57:36.920843: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-01-13 18:57:36.925895: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-01-13 18:57:38.108599: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55f743833150 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-01-13 18:57:38.108675: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 3080, Compute Capability 8.6
+2021-01-13 18:57:38.110593: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:d5:00.0 name: GeForce RTX 3080 computeCapability: 8.6
+coreClock: 1.71GHz coreCount: 68 deviceMemorySize: 9.77GiB deviceMemoryBandwidth: 707.88GiB/s
+2021-01-13 18:57:38.111004: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-01-13 18:57:38.114423: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-01-13 18:57:38.117465: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-01-13 18:57:38.117986: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-01-13 18:57:38.121004: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-01-13 18:57:38.122780: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-01-13 18:57:38.129327: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-01-13 18:57:38.131057: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-01-13 18:57:38.131108: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-01-13 18:57:38.132089: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-01-13 18:57:38.132105: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2021-01-13 18:57:38.132114: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N 
+2021-01-13 18:57:38.133813: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4003 MB memory) -> physical GPU (device: 0, name: GeForce RTX 3080, pci bus id: 0000:d5:00.0, compute capability: 8.6)
+2021-01-13 18:57:56.920501: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:d5:00.0 name: GeForce RTX 3080 computeCapability: 8.6
+coreClock: 1.71GHz coreCount: 68 deviceMemorySize: 9.77GiB deviceMemoryBandwidth: 707.88GiB/s
+2021-01-13 18:57:56.920605: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-01-13 18:57:56.920621: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-01-13 18:57:56.920638: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-01-13 18:57:56.920651: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-01-13 18:57:56.920673: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-01-13 18:57:56.920685: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-01-13 18:57:56.920698: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-01-13 18:57:56.921785: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-01-13 18:57:56.922908: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1561] Found device 0 with properties: 
+pciBusID: 0000:d5:00.0 name: GeForce RTX 3080 computeCapability: 8.6
+coreClock: 1.71GHz coreCount: 68 deviceMemorySize: 9.77GiB deviceMemoryBandwidth: 707.88GiB/s
+2021-01-13 18:57:56.922945: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.1
+2021-01-13 18:57:56.922956: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+2021-01-13 18:57:56.922966: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10
+2021-01-13 18:57:56.922975: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10
+2021-01-13 18:57:56.922984: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10
+2021-01-13 18:57:56.922993: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10
+2021-01-13 18:57:56.923003: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-01-13 18:57:56.924087: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1703] Adding visible gpu devices: 0
+2021-01-13 18:57:56.924125: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1102] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-01-13 18:57:56.924130: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1108]      0 
+2021-01-13 18:57:56.924136: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1121] 0:   N 
+2021-01-13 18:57:56.925235: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1247] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 4003 MB memory) -> physical GPU (device: 0, name: GeForce RTX 3080, pci bus id: 0000:d5:00.0, compute capability: 8.6)
+2021-01-13 19:04:42.006580: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-01-13 19:22:55.670230: W tensorflow/stream_executor/gpu/asm_compiler.cc:81] Running ptxas --version returned 256
+2021-01-13 19:22:55.734637: W tensorflow/stream_executor/gpu/redzone_allocator.cc:314] Internal: ptxas exited with non-zero error code 256, output: 
+Relying on driver to perform ptx compilation. 
+Modify $PATH to customize ptxas location.
+This message will be only logged once.
+2021-01-13 19:22:56.864204: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10
+Using TensorFlow backend.
+/home/xuemeng/Proj/ChestMotion/Fewshotchestmotion/Func_ReadAllData.py:9: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray
+  nda = np.array(data).shape[0]
+batch 0: train=1.000000 test=0.000000
+batch 10: train=0.500000 test=0.000000
+batch 20: train=0.000000 test=1.000000
+batch 30: train=0.000000 test=0.500000
+batch 40: train=0.500000 test=0.000000
+batch 50: train=0.500000 test=0.500000
+batch 60: train=0.500000 test=0.500000
+batch 70: train=0.500000 test=0.500000
+batch 80: train=0.500000 test=0.500000
+batch 90: train=0.500000 test=0.500000
+batch 100: train=0.500000 test=0.500000
+batch 110: train=0.500000 test=0.500000
+batch 120: train=0.500000 test=0.500000
+batch 130: train=0.500000 test=0.500000
+batch 140: train=0.000000 test=0.000000
+batch 150: train=0.000000 test=0.000000
+batch 160: train=0.000000 test=0.000000
+batch 170: train=0.000000 test=0.000000
+batch 180: train=0.000000 test=0.000000
+batch 190: train=0.000000 test=0.000000
+batch 200: train=0.000000 test=0.000000
+batch 210: train=0.000000 test=0.000000
+batch 220: train=0.000000 test=0.000000
+batch 230: train=0.000000 test=0.000000
+batch 240: train=0.000000 test=0.000000
+batch 250: train=0.000000 test=0.000000
+batch 260: train=0.000000 test=0.000000
+batch 270: train=0.000000 test=0.000000
+batch 280: train=0.000000 test=0.000000
+batch 290: train=0.000000 test=0.000000
+batch 300: train=0.000000 test=0.000000
+batch 310: train=0.000000 test=0.000000
+batch 320: train=0.000000 test=0.000000
+batch 330: train=0.000000 test=0.000000
+batch 340: train=0.000000 test=0.000000
+batch 350: train=0.000000 test=0.000000
+batch 360: train=0.000000 test=0.000000
+batch 370: train=0.000000 test=0.000000
+batch 380: train=0.000000 test=0.000000
+batch 390: train=0.000000 test=0.000000
+batch 400: train=0.000000 test=0.000000
+batch 410: train=0.000000 test=0.000000
+batch 420: train=0.000000 test=0.000000
+batch 430: train=0.000000 test=0.000000
+batch 440: train=0.000000 test=0.000000
+batch 450: train=0.000000 test=0.000000
+batch 460: train=0.000000 test=0.000000
+batch 470: train=0.000000 test=0.000000
+batch 480: train=0.000000 test=0.000000
+batch 490: train=0.000000 test=0.000000
+batch 500: train=0.000000 test=0.000000
+batch 510: train=0.000000 test=0.000000
+batch 520: train=0.000000 test=0.000000
+batch 530: train=0.000000 test=0.000000
+batch 540: train=0.000000 test=0.000000
+batch 550: train=0.000000 test=0.000000
+batch 560: train=0.000000 test=0.000000
+batch 570: train=0.000000 test=0.000000
+batch 580: train=0.000000 test=0.000000
+batch 590: train=0.000000 test=0.000000
+batch 600: train=0.000000 test=0.000000
+batch 610: train=0.000000 test=0.000000
+batch 620: train=0.000000 test=0.000000
+batch 630: train=0.000000 test=0.000000
+batch 640: train=0.000000 test=0.000000
+batch 650: train=0.000000 test=0.000000
+batch 660: train=0.000000 test=0.000000
+batch 670: train=0.000000 test=0.000000
+batch 680: train=0.000000 test=0.000000
+batch 690: train=0.000000 test=0.000000
+batch 700: train=0.000000 test=0.000000
+batch 710: train=0.000000 test=0.000000
+batch 720: train=0.000000 test=0.000000
+batch 730: train=0.000000 test=0.000000
+batch 740: train=0.000000 test=0.000000
+batch 750: train=0.000000 test=0.000000
+batch 760: train=0.000000 test=0.000000
+batch 770: train=0.000000 test=0.000000
+batch 780: train=0.000000 test=0.000000
+batch 790: train=0.000000 test=0.000000
+batch 800: train=0.000000 test=0.000000
+batch 810: train=0.000000 test=0.000000
+batch 820: train=0.000000 test=0.000000
+batch 830: train=0.000000 test=0.000000
+batch 840: train=0.000000 test=0.000000
+batch 850: train=0.000000 test=0.000000
+batch 860: train=0.000000 test=0.000000
+batch 870: train=0.000000 test=0.000000
+batch 880: train=0.000000 test=0.000000
+batch 890: train=0.000000 test=0.000000
+batch 900: train=0.000000 test=0.000000
+batch 910: train=0.000000 test=0.000000
+batch 920: train=0.000000 test=0.000000
+batch 930: train=0.000000 test=0.000000
+batch 940: train=0.000000 test=0.000000
+batch 950: train=0.000000 test=0.000000
+batch 960: train=0.000000 test=0.000000
+batch 970: train=0.000000 test=0.000000
+batch 980: train=0.000000 test=0.000000
+batch 990: train=0.000000 test=0.000000
+batch 1000: train=0.000000 test=0.000000
+batch 1010: train=0.000000 test=0.000000
+batch 1020: train=0.000000 test=0.000000
+batch 1030: train=0.000000 test=0.000000
+batch 1040: train=0.000000 test=0.000000
+batch 1050: train=0.000000 test=0.000000
+batch 1060: train=0.000000 test=0.000000
+batch 1070: train=0.000000 test=0.000000
+batch 1080: train=0.000000 test=0.000000
+batch 1090: train=0.000000 test=0.000000
+batch 1100: train=0.000000 test=0.000000
+batch 1110: train=0.000000 test=0.000000
+batch 1120: train=0.000000 test=0.000000
+batch 1130: train=0.000000 test=0.000000
+batch 1140: train=0.000000 test=0.000000
+batch 1150: train=0.000000 test=0.000000
+batch 1160: train=0.000000 test=0.000000
+batch 1170: train=0.000000 test=0.000000
+batch 1180: train=0.000000 test=0.000000
+batch 1190: train=0.000000 test=0.000000
+batch 1200: train=0.000000 test=0.000000
+batch 1210: train=0.000000 test=0.000000
+batch 1220: train=0.000000 test=0.000000
+batch 1230: train=0.000000 test=0.000000
+batch 1240: train=0.000000 test=0.000000
+batch 1250: train=0.000000 test=0.000000
+batch 1260: train=0.000000 test=0.000000
+batch 1270: train=0.000000 test=0.000000
+batch 1280: train=0.000000 test=0.000000
+batch 1290: train=0.000000 test=0.000000
+batch 1300: train=0.000000 test=0.000000
+batch 1310: train=0.000000 test=0.000000
+batch 1320: train=0.000000 test=0.000000
+batch 1330: train=0.000000 test=0.000000
+batch 1340: train=0.000000 test=0.000000
+batch 1350: train=0.000000 test=0.000000
+batch 1360: train=0.000000 test=0.000000
+batch 1370: train=0.000000 test=0.000000
+batch 1380: train=0.000000 test=0.000000
+batch 1390: train=0.000000 test=0.000000
+batch 1400: train=0.000000 test=0.000000
+batch 1410: train=0.000000 test=0.000000
+batch 1420: train=0.000000 test=0.000000
+batch 1430: train=0.000000 test=0.000000
+batch 1440: train=0.000000 test=0.000000
+batch 1450: train=0.000000 test=0.000000
+batch 1460: train=0.000000 test=0.000000
+batch 1470: train=0.000000 test=0.000000
+batch 1480: train=0.000000 test=0.000000
+batch 1490: train=0.000000 test=0.000000
+batch 1500: train=0.000000 test=0.000000
+batch 1510: train=0.000000 test=0.000000
+batch 1520: train=0.000000 test=0.000000
+batch 1530: train=0.000000 test=0.000000
+batch 1540: train=0.000000 test=0.000000
+batch 1550: train=0.000000 test=0.000000
+batch 1560: train=0.000000 test=0.000000
+batch 1570: train=0.000000 test=0.000000
+batch 1580: train=0.000000 test=0.000000
+batch 1590: train=0.000000 test=0.000000
+batch 1600: train=0.000000 test=0.000000
+batch 1610: train=0.000000 test=0.000000
+batch 1620: train=0.000000 test=0.000000
+batch 1630: train=0.000000 test=0.000000
+batch 1640: train=0.000000 test=0.000000
+batch 1650: train=0.000000 test=0.000000
+batch 1660: train=0.000000 test=0.000000
+batch 1670: train=0.000000 test=0.000000
+batch 1680: train=0.000000 test=0.000000
+batch 1690: train=0.000000 test=0.000000
+batch 1700: train=0.000000 test=0.000000
+batch 1710: train=0.000000 test=0.000000
+batch 1720: train=0.000000 test=0.000000
+batch 1730: train=0.000000 test=0.000000
+batch 1740: train=0.000000 test=0.000000
+batch 1750: train=0.000000 test=0.000000
+batch 1760: train=0.000000 test=0.000000
+batch 1770: train=0.000000 test=0.000000
+batch 1780: train=0.000000 test=0.000000
+batch 1790: train=0.000000 test=0.000000
+batch 1800: train=0.000000 test=0.000000
+batch 1810: train=0.000000 test=0.000000
+batch 1820: train=0.000000 test=0.000000
+batch 1830: train=0.000000 test=0.000000
+batch 1840: train=0.000000 test=0.000000
+batch 1850: train=0.000000 test=0.000000
+batch 1860: train=0.000000 test=0.000000
+batch 1870: train=0.000000 test=0.000000
+batch 1880: train=0.000000 test=0.000000
+batch 1890: train=0.000000 test=0.000000
+batch 1900: train=0.000000 test=0.000000
+batch 1910: train=0.000000 test=0.000000
+batch 1920: train=0.000000 test=0.000000
+batch 1930: train=0.000000 test=0.000000
+batch 1940: train=0.000000 test=0.000000
+batch 1950: train=0.000000 test=0.000000
+batch 1960: train=0.000000 test=0.000000
+batch 1970: train=0.000000 test=0.000000
+batch 1980: train=0.000000 test=0.000000
+batch 1990: train=0.000000 test=0.000000
+Traceback (most recent call last):
+  File "FewShotchest.py", line 253, in <module>
+    testSet = TestDataset(False)
+  File "FewShotchest.py", line 227, in __init__
+    self.data_train, self.labels_train = Func_ReadAllData.loadAllData('Final',2/3,training)
+  File "/home/xuemeng/Proj/ChestMotion/Fewshotchestmotion/Func_ReadAllData.py", line 34, in loadAllData
+    list = os.listdir(finalDir) #获取所有person的name
+FileNotFoundError: [Errno 2] No such file or directory: 'Final'
