@@ -153,11 +153,9 @@ class testDataset:
                   # else:
                   #   testImage[class_obj] = random.choices(self.data[label_subset[class_idx]][shots+1:],k=test_size)
                   #   testLabels[class_obj][0:] = class_idx
-                   
-                  testImage[class_obj] = random.choices(self.data[label_subset[class_idx]][shots+1:],k=test_size)
-                  testLabels[class_obj][0:] = class_idx 
 
-                  
+                  testImage[class_obj] = random.choices(self.data[label_subset[class_idx]][shots+1:],k=test_size)
+                  testLabels[class_obj][0:] = class_idx
 
                 test_images[class_idx] = images_to_split[-1]
                 temp_images[
