@@ -199,9 +199,20 @@ class testDataset:
 testSet = testDataset(False)
 
 model = tf.keras.models.load_model("checkpoint/model_2way.h5")
+# dir_list = os.listdir(r"Set2/test/")
+# files=[]
+# for dir in dir_list:
+#     t=dir.split("_")
+#     if(len(t)>2):
+#         t1=t[0]
+#         t2='_'.join(t[1:])
+#     else:
+#         t1=t[0]
+#         t2=t[1]
+#     files.append([t1,t2])
 
 number = 1000
-test_size = 5
+test_size = 1
 acc = {}
 # for shots in range(1,21,1):
 #   print("shots:{}".format(shots))

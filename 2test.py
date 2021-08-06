@@ -84,7 +84,7 @@ class testDataset:
         self.data = {}
         self.test_data = {}
         data_train, labels_train = ReadData.loadData(startPath="split2",training=training)
-        data_test, labels_test = ReadData.loadData(startPath=os.path.join("Set2"),training=training)
+        data_test, labels_test = ReadData.loadData(startPath=os.path.join("Set"),training=training)
         for data_tmp, label_tmp in zip(data_train, labels_train):
             data_tmp = np.expand_dims(data_tmp, axis=2)
             if label_tmp not in self.data:
@@ -201,7 +201,7 @@ testSet = testDataset(False)
 
 model = tf.keras.models.load_model("checkpoint/model_2way.h5")
 
-dir_list = os.listdir(r"Set2/test/")
+dir_list = os.listdir(r"Set/test/")
 
 eer_result={}
 files=[]
@@ -215,14 +215,14 @@ for dir in dir_list:
         t2=t[1]
     eer_result[t1]=[]
     files.append([t1,t2])
-with open(r"Set2/result_{}.txt".format(files[0][0]),"a") as f:
-    f.write("\n")
+    with open(r"result/result_{}.txt".format(t1),"a") as f:
+        f.write("\n")
 
 
 for file in files:
-  number = 500
+  number = 200
   acc = {}
-  shots=15
+  shots=5
   all_count = {}  #保存各个类被抽取出的总次数
   label_dic = {}  #保存各个类被抽取出来后预测正确的次数，与上面的总次数相除暂定为预测的准确度
   for i in range(number):
@@ -277,7 +277,7 @@ for file in files:
   for key in label_dic.keys():
     result[key] = (label_dic[key]/all_count[key])*100
     print("label:{},  抽取出来的总次数:{},  其中预测正确的次数:{},  acc:{:.2f}%".format(key,all_count[key],label_dic[key],(label_dic[key]/all_count[key])*100))
-  with open(r"Set2/result_{}.txt".format(file[0]),"a") as f:
+  with open(r"result/result_{}.txt".format(file[0]),"a") as f:
     f.write("{}:{}\n".format(file[1],result[file[0]]))
 #with open("Set2/attacker_result.txt",'a') as f:
 #    f.write(str(eer_result))
