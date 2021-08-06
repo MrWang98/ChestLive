@@ -1,4 +1,6 @@
 function peocessor()
+    addpath(genpath('/home/xuemeng/matlab/toobox'));
+    addpath(genpath('../Matlab_Files'));
 %    close all;
 %    clear;clc;
     %%

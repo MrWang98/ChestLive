@@ -84,8 +84,8 @@ class testDataset:
     def __init__(self, training):
         self.data = {}
         self.test_data = {}
-        data_train, labels_train = ReadData.loadData(startPath="split",training=training)
-        # data_test, labels_test = ReadData.loadData(startPath=os.path.join("Set2"),training=training)
+        data_train, labels_train = ReadData.loadData(startPath="split2",training=training)
+        data_test, labels_test = ReadData.loadData(startPath=os.path.join("Set"),training=training)
         for data_tmp, label_tmp in zip(data_train, labels_train):
             data_tmp = np.expand_dims(data_tmp, axis=2)
             if label_tmp not in self.data:
@@ -93,12 +93,12 @@ class testDataset:
             self.data[label_tmp].append(data_tmp)
             self.labels = list(self.data.keys())
         
-        # for data_tmp, label_tmp in zip(data_test, labels_test):
-        #     data_tmp = np.expand_dims(data_tmp, axis=2)
-        #     if label_tmp not in self.test_data:
-        #         self.test_data[label_tmp] = []
-        #     self.test_data[label_tmp].append(data_tmp)
-        #     self.test_labels = list(self.test_data.keys())
+        for data_tmp, label_tmp in zip(data_test, labels_test):
+            data_tmp = np.expand_dims(data_tmp, axis=2)
+            if label_tmp not in self.test_data:
+                self.test_data[label_tmp] = []
+            self.test_data[label_tmp].append(data_tmp)
+            self.test_labels = list(self.test_data.keys())
 
             
 
@@ -146,16 +146,16 @@ class testDataset:
                   keys[class_idx] = class_obj
                   print("keys:{}".format(keys))
 
-                  # if(label_subset[class_idx]=="FCK"):
-                  #   print(label_subset[class_idx]+"_Left_oneplus")
-                  #   testImage[class_obj] = random.choices(self.test_data[label_subset[class_idx]+"_Left_oneplus"],k=test_size)
-                  #   testLabels[class_obj][0:] = class_idx 
-                  # else:
-                  #   testImage[class_obj] = random.choices(self.data[label_subset[class_idx]][shots+1:],k=test_size)
-                  #   testLabels[class_obj][0:] = class_idx
+                  if(label_subset[class_idx]=="WZY"):
+                    print(label_subset[class_idx]+"_hungry")
+                    testImage[class_obj] = random.choices(self.test_data[label_subset[class_idx]+"_hungry"],k=test_size)
+                    testLabels[class_obj][0:] = class_idx
+                  else:
+                    testImage[class_obj] = random.choices(self.data[label_subset[class_idx]][shots+1:],k=test_size)
+                    testLabels[class_obj][0:] = class_idx
 
-                  testImage[class_obj] = random.choices(self.data[label_subset[class_idx]][shots+1:],k=test_size)
-                  testLabels[class_obj][0:] = class_idx
+                  # testImage[class_obj] = random.choices(self.data[label_subset[class_idx]][shots+1:],k=test_size)
+                  # testLabels[class_obj][0:] = class_idx
 
                 test_images[class_idx] = images_to_split[-1]
                 temp_images[
