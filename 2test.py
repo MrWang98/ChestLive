@@ -199,7 +199,7 @@ class testDataset:
 
 testSet = testDataset(False)
 
-model = tf.keras.models.load_model("checkpoint/model_2way.h5")
+model = tf.keras.models.load_model("checkpoint/model_2way2.h5")
 
 dir_list = os.listdir(r"Set/test/")
 
